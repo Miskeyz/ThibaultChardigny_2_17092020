@@ -1,15 +1,15 @@
-#page-size
-{
-	width: 1440px;
-	padding-left: 50px;
-	padding-right: 50px;
-	margin: auto;
-}
-
 body
 {
-	width: auto;
+	width: 1440px;
+	margin: auto;
 	font-family: 'Raleway', sans-serif;
+	border: 1px solid black;
+}
+
+#page-size
+{
+	width: 93%;
+	margin: auto;
 }
 
 a
@@ -23,6 +23,40 @@ a
 	border: 1px solid black;
 }
 
+h1
+{
+	font-size: 1.42em;
+	margin-bottom: -8px;
+}
+
+h2
+{
+	font-weight: 600;
+	font-size: 1.4em;
+	margin-bottom: 30px;
+}
+
+h3
+{
+	margin-right: 30px;
+	font-size: 1em;
+}
+
+p
+{
+	font-size: 1.05em;
+}
+
+.hebergement-card, .populaire-card, .activity-card
+{
+	box-shadow: 0px 0px 10px 0.5px #a0a0a0;
+}
+
+.hebergement-card:hover, .populaire-card:hover, .activity-card:hover
+{
+	box-shadow: 0 0 10px 0.5px #DEEBFF;
+}
+
 /* HEADER */
 
 header
@@ -33,7 +67,7 @@ header
 #logo-reservia
 {
 	margin-top: 45px;
-	flex-grow: 6;
+	flex-grow: 12;
 }
 
 header nav
@@ -58,7 +92,7 @@ header nav li
 	width: 50%;
 }
 
-header nav a:hover
+header nav a:hover, #sign-in:hover
 {
 	color: #0065FC;
 	border-top: 2px solid #0065FC;
@@ -69,22 +103,734 @@ header nav a
 	display: block;
 	text-align: center;
 	padding-top: 60px;
-	margin-right: 20px;
 	border-top: 2px solid white;
 }
 
-#btn-inscription
+#sign-in
 {
-	margin: 60px 0 0 0;
 	flex-grow: 1;
 	text-align: center;
 	font-weight: bold;
+	border-top: 2px solid white;
 }
 
-#btn-inscription a
+#sign-in a
 {
 	color: #0065FC;
+	display: block;
+	padding: 60px 0 0 0;
 }
+
+/* SEARCH SECTION */
+
+#search-bar
+{
+	display: flex;
+	margin-top: 20px;
+}
+
+#gps-btn
+{
+	background-color: #F2F2F2;
+	text-align: center;
+	padding-top: 18px;
+	height: 36px;
+	width: 50px;
+	border-radius: 15px 0 0 15px;
+}
+
+form
+{
+	position: relative;
+}
+
+form input
+{
+	height: 50px;
+	border: 1px solid #f2f2f2;
+}
+
+#search-area
+{
+	width: 225px;
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#submit-btn
+{
+	height: 55px;
+	width: 134px;
+	border-radius: 0 15px 15px 0;
+	margin-left: -5px;
+	font-size: 1.1em;
+	font-weight: bold;
+	background-color: #0065FC;
+	color: white;
+}
+
+#search-icon-xs-screen
+{
+	display: none;
+}
+
+/* FILTERS SECTION */
+
+#filters
+{
+	display: flex;
+	margin-top: 30px;
+}
+
+#filters-grid
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filters-btn
+{
+	display: flex;
+	margin-bottom: 10px;
+}
+
+#filters i
+{
+	text-align: center;
+	width: 52px;
+	height: 34px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	padding-top: 18px;
+	margin-top: -2px;
+	margin-left: -4px;
+	color: #0065FC;
+}
+
+#filters a
+{
+	border: 2px solid #d9d9d9;
+	border-radius: 50px;
+	height: 48px;
+	padding-right: 20px;
+	margin-right: 24px;
+}
+
+#filters a:hover
+{
+	border-color: #0065FC;
+	color: #0065FC;
+}
+
+#filters p
+{
+	margin-left: 13px;
+	font-weight: bold;
+	margin-top: 14px;
+}
+
+/* INFOS SECTIONS */
+
+#info
+{
+	display: flex;
+	align-items: center;
+}
+
+#info p
+{
+	margin-left: 10px;
+}
+
+#info i
+{
+	display: block;
+	color: #0065FC;
+	border: 1px solid #f2f2f2;
+	font-size: 0.7em;
+	border-radius: 50%;
+	height: 12px;
+	padding: 6px 10px 6px 10px;
+}
+
+/* HEBERGEMENT SECTION */
+
+#two-blocks
+{
+	display: flex;
+}
+
+#hebergements
+{
+	flex: 2;
+	background-color: #f2f2f2;
+	border-radius: 30px;
+	padding: 25px 40px 50px 40px;
+	margin-top: 15px;
+	margin-right: 40px;
+}
+
+#mosaique-hebergements
+{
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 30px;
+	margin-bottom: 45px;
+}
+
+.hebergement-card
+{
+	display: block;
+	background-color: white;
+	width: 240px;
+	height: 200px;
+	border-radius: 20px;
+	position: relative;
+}
+
+.hebergement-card img
+{
+	width: 96%;
+	border-radius: 17px 17px 0 0;
+	margin: 2% 2% 0 2%;
+	object-fit: cover;
+	height: 114px;
+}
+
+.hebergement-card h3
+{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.hebergement-card p
+{
+	margin-left: 15px;
+	margin-top: 0;
+	line-height: 0;
+	font-size: 0.9em;
+}
+
+.hebergement-card span
+{
+	font-weight: bold;
+}
+
+.hebergement-card div
+{
+	position: absolute;
+	bottom: 5px;
+	left: 14px;
+}
+
+.hebergement-card i, .populaire-card i
+{
+	font-size: 0.75em;
+	margin-top: 3px;
+	margin-right: -1px;
+	color: #0065FC;
+}
+
+.more-link
+{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* SECTION POPULAIRES */
+
+#populaires
+{
+	flex: 1;
+	background-color: #f2f2f2;
+	border-radius: 30px;
+	padding: 25px 0 40px 40px;
+	margin-top: 15px;
+}
+
+#populaire-title
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: -10px;
+	margin-right: 40px;
+}
+
+#populaire-title i
+{
+	font-size: 1.3em;
+}
+
+.populaire-card
+{
+	display: block;
+	display: flex;
+	width: 90%;
+	height: 144px;
+	background-color: white;
+	margin: 15px 0 0 0;
+	border-radius: 20px;
+	position: relative;
+}
+
+.populaire-card img
+{
+	width: 125px;
+	height: 93%;
+	margin: 1.5% 20px 1.5% 1.5%;
+	object-fit: cover;
+	border-radius: 17px 0 0 17px;
+}
+
+.populaire-card p
+{
+	line-height: 0;
+	font-size: 0.9em;
+}
+
+.stars
+{
+	position: absolute;
+	bottom: 10px;
+	left: 148px;
+}
+
+/* SECTION ACTIVITES */
+
+#activities
+{
+	margin-top: 50px;
+}
+
+#mosaique-activities
+{
+	display: flex;
+	column-gap: 40px;
+}
+
+#mosaique-activities div
+{
+	width: 25%;	
+}
+
+.activity-card
+{
+	display: block;
+	background-color: white;
+	border-radius: 30px;
+	padding-bottom: 5px;
+	margin-bottom: 40px;
+}
+
+.activity-card h3
+{
+	margin-left: 20px;
+	font-size: 0.95em;
+}
+
+.activity-card img
+{
+	border-radius: 30px 30px 0 0;
+	object-fit: cover;
+	width: 100%;
+}
+
+.image-lg
+{
+	height: 390px;
+	object-position: 50% 50%;
+}
+
+.image-md
+{
+	height: 180px;
+	object-position: 50% 40%;
+}
+
+.image-small
+{
+	height: 110px;
+	object-position: 0 20%;
+}
+
+.garde
+{
+	height: 140px;
+	object-position: 50% 0%;
+}
+
+.longchamp
+{
+	object-position: 0% 0%;
+	height: 150px;
+}
+
+/* FOOTER SECTION */
+
+footer
+{
+	background-color: #f2f2f2;
+	padding: 30px 0 40px 50px;
+}
+
+footer nav
+{
+	display: flex;
+}
+
+footer nav div
+{
+	flex-grow: 1;
+}
+
+footer nav ul
+{
+	padding: 0;
+	list-style-type: none;
+}
+
+footer nav ul li
+{
+	margin-bottom: 10px;
+}
+
+footer nav ul li:hover
+{
+	text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1400px) and (min-width: 1024px)
+{
+	body
+	{
+		width: auto;
+	}
+
+	#hebergements
+	{
+		width: auto;
+	}
+
+	#mosaique-hebergements
+	{
+		justify-content: space-between;
+	}
+
+	#populaires
+	{
+		width: auto;
+	}
+
+	.populaire-card
+	{
+		flex-direction: column;
+		background-color: white;
+		width: 90%;
+		height: 200px;
+		border-radius: 20px;
+		position: relative;
+	}
+
+	.populaire-card img
+	{
+		width: 96%;
+		border-radius: 17px 17px 0 0;
+		margin: 2% 2% 0 2%;
+		height: 114px;
+	}
+
+	.populaire-card h3, .populaire-card p
+	{
+		margin-left: 15px;
+	}
+
+	.populaire-card p
+	{
+		margin-top: -5px;
+	}
+
+	.populaire-card h3
+	{
+		margin-top: 5px;
+		font-size: 0.9em;
+	}
+
+	.stars
+	{
+		left: 15px;
+		bottom: 5px;
+	}
+
+}
+
+@media all and (max-width: 1023px) and (min-width: 600px)
+{
+	body
+	{
+		width: auto;
+	}
+
+	#two-blocks
+	{
+		flex-direction: column;
+	}
+
+	#hebergements
+	{
+		flex: 1;
+		order: 2;
+	}
+
+	#mosaique-hebergements
+	{
+		justify-content: center;
+	}
+
+	.hebergement-card
+	{
+		width: 45%;
+	}
+
+	.hebergement-card h3
+	{
+		margin-top: 0;
+	}
+
+	.hebergement-card p
+	{
+		margin-top: -7px;
+	}
+
+	#populaires
+	{
+		width: auto;
+		flex: 1;
+		order: 1;
+	}
+
+	.populaire-card
+	{
+		background-color: white;
+		width: 90%;
+		border-radius: 20px;
+		position: relative;
+	}
+
+	.populaire-card img
+	{
+		height: 90.5%;
+		margin: 1% 20px 1% 1%;
+	}
+
+	.populaire-card h3
+	{
+		font-size: 1.3em;
+	}
+
+
+	.stars
+	{
+		left: 150px;
+	}
+
+	#mosaique-activities
+	{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#mosaique-activities div
+	{
+		width: 46%;
+	}
+}
+
+@media all and (max-width: 599px)
+{
+	body
+	{
+		width: auto;
+	}
+
+	#page-size
+	{
+		width: 90%;
+	}
+
+	p
+	{
+		font-size: 1em;
+	}
+
+	header
+	{
+		flex-wrap: wrap;
+	}
+
+	#logo-reservia
+	{
+		width: 70%;
+	}
+
+	header nav
+	{
+		order: 3;
+	}
+
+	header nav ul
+	{
+		margin-left: -5%;
+		margin-right: -5%;
+		padding-bottom: 10px;
+	}
+
+	header nav a
+	{
+		border-top: 0;
+		border-bottom: 3px solid #f2f2f2;
+		padding-bottom: 15px;
+		padding-top: 25px;
+	}
+
+	header nav a:hover
+	{
+		border-bottom: 3px solid #0065FC;
+		border-top: 0;
+	}
+
+	#sign-in
+	{
+		order: 2;
+	}
+
+	#search-bar
+	{
+		width: 90%;
+	}
+
+	#search-area
+	{
+		width: 95%;
+		position: relative;
+	}
+
+	#submit-btn
+	{
+		color: #0065FC;
+		width: 54px;
+		border-radius: 15px;
+		position: absolute;
+		top: 0;
+		right: -40px;
+	}
+
+	#search-icon-xs-screen
+	{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: -22px;
+		color: white;
+	}
+
+	#filters
+	{
+		flex-direction: column;
+	}
+
+	.filters a
+	{
+		margin-right: -50px;
+	}
+
+	#two-blocks
+	{
+		flex-direction: column;
+	}
+
+	#hebergements
+	{
+		order: 2;
+		background-color: white;
+		padding: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.hebergement-card
+	{
+		width: 100%;
+	}
+
+	#populaires
+	{
+		order: 1;
+		border-radius: 0;
+		margin-left: -5%;
+		margin-right: -5%;
+		padding-left: 20px;
+	}
+
+	#populaire-title
+	{
+		margin-right: 20px;
+	}
+
+	.populaire-card
+	{
+		width: 94%;
+	}
+
+	#mosaique-activities
+	{
+		flex-direction: column;
+	}
+
+	#mosaique-activities div
+	{
+		width: 100%;
+	}
+
+	.image-lg, .image-md, .image-small, .garde, .longchamp
+	{
+		height: 130px;
+	}
+
+	.image-md
+	{
+		object-position: 50% 43%;
+	}
+
+	.image-lg
+	{
+		object-position: 50% 20%;
+	}
+
+	.garde
+	{
+		object-position: 50% 10%;
+	}
+
+	.longchamp
+	{
+		object-position: 50% 25%;
+	}
+
+	footer nav
+	{
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+
 
 
 
