@@ -220,6 +220,13 @@ form input
 	margin-bottom: 10px;
 }
 
+.filters-heading
+{
+	margin-right: 30px;
+	font-size: 1em;
+	margin-top: 16px;
+}
+
 #filters i
 {
 	text-align: center;
