@@ -151,10 +151,11 @@ header nav a
 {
 	background-color: #F2F2F2;
 	text-align: center;
-	padding-top: 18px;
-	height: 36px;
+	padding-top: 16px;
+	height: 34px;
 	width: 50px;
 	border-radius: 15px 0 0 15px;
+	border: 2px solid #f2f2f2;
 }
 
 form
@@ -186,6 +187,13 @@ form input
 	font-weight: bold;
 	background-color: #0065FC;
 	color: white;
+}
+
+#submit-btn:hover, #gps-btn:hover
+{
+	color: #0065FC;
+	background-color: #fff;
+	border: 2px solid #0065FC;
 }
 
 #search-icon-xs-screen
@@ -376,13 +384,27 @@ form input
 	font-size: 0.75em;
 	margin-top: 3px;
 	margin-right: -1px;
+}
+
+.star-blue
+{
 	color: #0065FC;
+}
+
+.star-grey
+{
+	color: #d9d9d9;
 }
 
 .more-link
 {
 	font-weight: bold;
 	font-size: 1.2em;
+}
+
+.more-link:hover
+{
+	color: #0065FC;
 }
 
 
@@ -416,6 +438,11 @@ form input
 #populaire-title i
 {
 	font-size: 1.3em;
+}
+
+#populaire-title i:hover
+{
+	color: #0065FC;
 }
 
 .populaire-card
