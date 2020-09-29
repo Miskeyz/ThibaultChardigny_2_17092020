@@ -152,7 +152,7 @@ p
 	height: 34px;
 	width: 50px;
 	border-radius: 15px 0 0 15px;
-	border: 2px solid #f2f2f2;
+	border: 2px solid #f1f2f2;
 	transition: all 300ms;
 }
 
@@ -184,14 +184,14 @@ p
 	font-size: 1.1em;
 	font-weight: bold;
 	border: 2px solid #0065FC;
-	background-color: #0065FC;
+	background-color: #0165FC;
 	color: white;
 	transition: all 300ms;
 }
 
 .search__btn:hover, .search__gps:hover
 {
-	color: #0065FC;
+	color: #0165FC;
 	background-color: #fff;
 	border: 2px solid #0065FC;
 }
