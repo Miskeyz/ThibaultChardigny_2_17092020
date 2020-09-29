@@ -317,7 +317,7 @@ p
 	display: flex;
 }
 
-.hebergements
+#hebergements
 {
 	flex: 2;
 	background-color: #f2f2f2;
@@ -506,7 +506,7 @@ p
 
 
 
-.activities
+#activities
 {
 	margin-top: 50px;
 }
@@ -627,7 +627,7 @@ p
 
 
 
-@media all and (max-width: 1400px) and (min-width: 1024px)
+@media all and (max-width: 1400px)
 {
 
 
@@ -641,7 +641,7 @@ p
 
 	/***************** HEBERGEMENT SECTION ********************/
 
-	.hebergements
+	#hebergements
 	{
 		width: auto;
 	}
@@ -701,7 +701,7 @@ p
 
 }
 
-@media all and (max-width: 1023px) and (min-width: 600px)
+@media all and (max-width: 1023px)
 {
 
 	/******************* GLOBAL SETTINGS *******************/
@@ -721,7 +721,7 @@ p
 	/***************** HEBERGEMENT SECTION *****************/
 
 
-	.hebergements
+	#hebergements
 	{
 		flex: 1;
 		order: 2;
@@ -765,23 +765,38 @@ p
 		width: 90%;
 		border-radius: 20px;
 		position: relative;
+		flex-direction: row;
 	}
 
 	.populaire-card__img
 	{
-		height: 90.5%;
+		width: 180px;
+		height: 94%;
 		margin: 1% 20px 1% 1%;
+		border-radius: 15px 0 0 15px;
 	}
 
 	.populaire-card__heading
 	{
-		font-size: 1.3em;
+		font-size: 1.5em;
+		margin-top: 20px;
+	}
+
+	.populaire-card__txt
+	{
+		font-size: 1em;
 	}
 
 
+	.populaire-card__stars
+	{
+		left: 220px;
+		top: 170px;
+	}
+
 	.populaire-card__star
 	{
-		left: 150px;
+		font-size: 1em;
 	}
 
 
@@ -946,13 +961,19 @@ p
 
 
 
-	.hebergements
+	#hebergements
 	{
 		order: 2;
 		background-color: white;
 		padding: 0;
 		margin-left: 0;
-		margin-right: 0;
+	}
+
+	.hebergement__mosaique
+	{
+		flex-direction: column;
+		width: auto;
+		margin-right: -40px;
 	}
 
 	.hebergement-card
@@ -1000,16 +1021,39 @@ p
 		font-size: 0.95em;
 	}
 
+	.populaire-card
+	{
+		height: 145px;
+	}
+
 	.populaire-card__img
 	{
-		height: auto;
-		margin: 1.5% 20px 1.5% 1.5%;
+		height: 94%;
+		width: 130px;
+		margin: 1.5% 5px 1.5% 1.5%;
+	}
+
+	.populaire-card__heading
+	{
+		font-size: 0.95em;
+	}
+
+	.populaire-card__txt
+	{
+		line-height: 25px;
+		font-size: 0.87em;
 	}
 
 	.populaire-card
 	{
 		width: 94%;
 		margin-bottom: -5px;
+	}
+
+	.populaire-card__stars
+	{
+		top: 120px;
+		left: 150px;
 	}
 
 	.populaire-card__star
